@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://staging-db:5432/projectdb
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+  level:
+    root: INFO
+    com.project: INFO
